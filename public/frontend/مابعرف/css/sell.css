@@ -1,0 +1,250 @@
+/* *, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sell_section{
+    width: 100%;
+    padding: 2% 5%;
+    background-color: #c9c9c9;
+}
+
+.sell_section > h2{
+    margin: 40px 0;
+}
+
+.sell_section > form > input{
+    width: calc(33% - 10px);
+    height: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.sell_section > form > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.sell_section > form > div > p{
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+.sell_section >form > main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 20px;
+    overflow: hidden;
+}
+
+.sell_section > form > main > div{
+    width: 100%;
+}
+
+.sell_section > form > label,
+.sell_section > form > main > div > label{
+    display: block;
+    font-weight: bold;
+    font-size: .9rem;
+    margin: 10px 0 10px 10px;
+    text-align: start;
+}
+
+.sell_section > form > main > div > textarea{
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, .5);
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(243, 243, 243);
+}
+
+.sell_section > form > main > div > footer{
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sell_section > form > main > div > footer > p {
+    font-weight: bold;
+}
+
+.sell_section >form > footer {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.sell_section >form > footer > button{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid lightblue;
+    outline: none;
+    background-color: lightblue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .9rem;
+} */
+
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sell_section{
+    width: 100%;
+    /* padding: 20px 80px;
+    background-color: #e5e5e5; */
+}
+
+.sell_section > header{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #4c4c51;
+    margin: 20px 0;
+    font-weight: bold;
+    display: none;
+}
+
+
+.sell_section > form{
+    background-color: #fff;
+    /* padding: 50px 0; */
+}
+
+.sell_section h3{
+    text-align: center;
+    color: #00E487;
+    cursor: pointer;
+}
+
+#code_inputs > div > footer > p,
+.sell_section label{
+    display: block;
+    margin-bottom: 10px;
+    color: #4C4C51;
+}
+
+.sell_section > form > label:first-child{
+    padding-left: 5%;
+    font-weight: bold;
+}
+
+.sell_section input{
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* .sell_section input{
+    width: 100%;
+    background-color: #fff;
+    color: #4C4C51  ;
+    height: 2rem;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #767676;
+    margin: 0 0 40px;
+}
+
+.sell_section input:hover,
+.sell_section input:focus{
+    outline: 1px solid #00E487;
+} */
+
+#card_type_list{
+    width: 100%;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+}
+
+#card_type_list > p{
+    border: 1px solid #606065;
+    color: #606065;
+    padding: 20px 10px ;
+    text-align: center;
+    cursor: pointer;
+}
+
+#card_type_list > p:hover{
+    border-color: #00E487;
+    color: #00E487;
+}
+
+#code_inputs{
+    margin: 30px 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 20px;
+    margin: 30px auto;
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: all .10s ease-in-out;
+}
+
+#code_inputs > div > textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
+
+#code_inputs > div > textarea:hover,
+#code_inputs > div > textarea:focus{
+    border: 1px solid #00E487;
+}
+
+#code_inputs > div > footer{
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons_section > button{
+    display: block;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #00e487;
+    color: #606065;
+    cursor: pointer;
+    background-color: #00E487;
+    color: #606065;
+    display: none;
+    /* width: 100%; */
+}
+
+.buttons_section > button:hover{
+    color: #fff;
+}

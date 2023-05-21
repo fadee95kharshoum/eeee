@@ -1,0 +1,77 @@
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.discount_section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    padding: 0;
+    min-height: 100vh;
+}
+
+.discount_section__header{
+    background-color: rgb(23, 102, 206);
+    color: #fff;
+    text-align: center;
+    padding: 10%;
+}
+
+.discount_section__header > h2{
+    margin: 0 0 50px;
+    font-size: 2rem
+}
+
+.discount_section__header > p{
+    margin: 50px 0;
+    font-size: 1.3rem;
+}
+
+.discount_section__main{
+    padding: 0 25%;
+}
+
+.discount_section__main > h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.discount_section__main__form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.discount_section__main__form > textarea,
+.discount_section__main__form > input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    height: 2.5rem;
+    margin: 15px 0;
+}
+
+.discount_section__main__form > textarea{
+    height: 9rem;
+    resize: none;
+}
+
+.discount_section__main__form > button{
+    width: 100%;
+    outline: none;
+    background-color: rgb(23, 102, 206);
+    color: #fff;
+    border: 1px solid rgb(23, 102, 206);
+    border-radius: 6px;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
